@@ -1,0 +1,20 @@
+.main-container-grid {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 2fr 6fr 2fr; /* 2fr 6fr 2fr*/
+}
+
+.table-one {
+    width: 100%;
+    border: 1px solid #CCC;
+}
+
+.table-one>tbody>tr>td{
+    border: 1px solid #CCC;
+    min-height: 50px;
+    padding: .5em;
+}
+
+.add-button{
+    font-size: bold;
+}

@@ -1,0 +1,7 @@
+.main-header {
+        background-color: #9d9b9b;
+        display: grid;
+        grid-template-columns: 2fr 6fr 2fr; /*1fr 6fr 2fr */
+        height: 100%;
+        vertical-align: middle;
+    }

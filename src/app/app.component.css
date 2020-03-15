@@ -1,0 +1,32 @@
+        .app-container-grod {
+            display: grid;
+            grid-template-rows: 1fr 12fr 1fr; 
+            height: 100%;
+        } 
+
+        /* .row-one,
+        .row-two,
+        .row-three {
+            display: grid;
+            grid-template-columns: 1fr 5fr 2fr;
+        }
+
+        .row-two {
+            background-color: #f1f1f1;
+        }
+
+        .row-two {
+            background-color: #f1f1f1;
+        }
+        .row-three {}
+        .container-padding {
+            margin: 12px;
+            border: 1px dashed #a69f9f;
+        } */
+
+        .align-center {
+            margin: 15px;
+            border: 1px dashed rgb(104,104,104);
+            text-align: center;
+            
+        }
