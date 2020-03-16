@@ -9,7 +9,11 @@ html,
 body {
     width: 100vw;
     height: 100vh;
-    background-color: #CCC;
+    background-color: #e6e2e2; /* this is the same 
+    color as the border was, thats why it wasn't showing.
+    it controls the entire page, like a parent of all parents.
+    you can also use this background-color tag in child elements too
+     */
 }
 
 .align-center {
