@@ -4,17 +4,21 @@
     grid-template-columns: 2fr 6fr 2fr; /* 2fr 6fr 2fr*/
 }
 
-.table-one {
-    width: 100%;
-    border: 1px solid #CCC;
+.pull-right{
+    float:right;
 }
 
-.table-one>tbody>tr>td{
+/* .table-one {
+    width: 100%;
+    border: 1px solid #CCC;
+} */
+
+/* .table-one>tbody>tr>td{
     border: 1px solid #CCC;
     min-height: 50px;
     padding: .5em;
-}
+} */
 
-.add-button{
+/* .add-button{
     font-size: bold;
-}
+} */

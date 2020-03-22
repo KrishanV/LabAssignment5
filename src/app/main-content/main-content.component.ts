@@ -5,7 +5,7 @@ interface IStudent{
   id:  number;
   firstName: string;
   lastName: string;
-  Course: string;
+  course: string;
 }
 
 @Component({
@@ -15,46 +15,42 @@ interface IStudent{
 })
 export class MainContentComponent implements OnInit {
 
-  students: Array<IStudent> = [];
-  constructor() {
-    this.students[0] = {
-      id: 1,
-      firstName: 'Krishan',
-      lastName: 'Verma',
-      Course: 'Programming'
-    }
-    this.students[1] = {
-      id: 1,
-      firstName: 'Bill',
-      lastName: 'Gates',
-      Course: 'Swmming'
-    }
-    this.students[2] = {
-      id: 1,
-      firstName: 'Tim',
-      lastName: 'Cook',
-      Course: 'English'
-    }
-    this.students[3] = {
-      id: 1,
-      firstName: 'Joe',
-      lastName: 'Biden',
-      Course: 'Politics'
-    }
-  }
+    studentArray: Array<IStudent> = [];
+  constructor(){}
 
-  ngOnInit(): void {
+ngOnInit(): void{
+  this.studentArray = [
+      {
+        id: 1,
+        firstName: 'Krishan',
+        lastName: 'Verma',
+        course: 'Programming'
+      },
+      {
+        id: 2,
+        firstName: 'Mike',
+        lastName: 'Tyson',
+        course: 'Boxing'
+      },
+      {
+        id: 3,
+        firstName: 'Mohammad',
+        lastName: 'Ali',
+        course: 'Super Boxing'
+      }
+    ];
   }
 
   addStudent(){
-    console.log('test')
-    const student:IStudent = {
-      id: 1,
-      firstName: 'Mike',
-      lastName: 'Tyson',
-      Course: 'Boxing'
-    };
-    this.students.push(student);
+    this.studentArray.unshift({
+        id: 1,
+        firstName: 'Krishan',
+        lastName: 'Verma',
+        course: 'Programming'
+    });
   }
 
+  removeStudent(index: number){
+    this.studentArray.splice(index, 1);
+  }
 }
