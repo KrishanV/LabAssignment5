@@ -24,9 +24,13 @@
             border: 1px dashed #a69f9f;
         } */
 
-        .align-center {
+        /* .align-center {
             margin: 15px;
             border: 1px dashed rgb(104,104,104);
             text-align: center;
             
-        }
+        } */
+
+        .main-outlet {
+            display: none;
+          }

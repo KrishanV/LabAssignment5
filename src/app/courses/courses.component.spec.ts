@@ -1,21 +1,20 @@
-'@NgModule.schemas'
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MainFooterComponent } from './main-footer.component';
+import { CoursesComponent } from './courses.component';
 
-describe('MainFooterComponent', () => {
-  let component: MainFooterComponent;
-  let fixture: ComponentFixture<MainFooterComponent>;
+describe('CoursesComponent', () => {
+  let component: CoursesComponent;
+  let fixture: ComponentFixture<CoursesComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MainFooterComponent ]
+      declarations: [ CoursesComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MainFooterComponent);
+    fixture = TestBed.createComponent(CoursesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

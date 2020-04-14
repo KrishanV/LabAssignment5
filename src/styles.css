@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
 * {
     margin: 0px;
     padding: 0px; 
@@ -7,16 +9,14 @@
 
 html,
 body {
-    width: 100vw;
-    height: 100vh;
-    background-color: #e6e2e2; /* this is the same 
-    color as the border was, thats why it wasn't showing.
-    it controls the entire page, like a parent of all parents.
-    you can also use this background-color tag in child elements too
-     */
+    width: 100%;
+    height: 100%;
+    background-color: #e6e2e2; 
 }
 
 .align-center {
     margin:15px;
     border: 1px dashed #CCC;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
