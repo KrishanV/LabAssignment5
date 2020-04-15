@@ -9,14 +9,35 @@
 
 html,
 body {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: #e6e2e2; 
+}
+.main-container{
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr 12fr 1fr;
+}
+
+.row-one,
+.row-two,
+.row-three {
+  display: grid;
+  grid-template-columns: 1fr 5fr 2fr;
+  height:100%;
+  width:100%;
+}
+
+.row-two {}
+
+.row-three {}
+
+.container-padding {
+  margin: 12px;
+  border: 1px dashed #a69f9f;
 }
 
 .align-center {
     margin:15px;
     border: 1px dashed #CCC;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
